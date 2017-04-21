@@ -13,7 +13,7 @@ namespace _360Evaluation3.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201704212039404_Initial"; }
+            get { return "201704212057068_Initial"; }
         }
         
         string IMigrationMetadata.Source

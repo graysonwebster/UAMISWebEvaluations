@@ -33,6 +33,8 @@ namespace _360Evaluation3.Migrations
                         Id = c.Int(nullable: false, identity: true),
                         Text = c.String(),
                         IsRatingQuestion = c.Boolean(nullable: false),
+                        IsTrueOrFalseQuestion = c.Boolean(nullable: false),
+                        IsActive = c.Boolean(nullable: false),
                         QuestionGroupId = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.Id)
@@ -45,7 +47,6 @@ namespace _360Evaluation3.Migrations
                     {
                         Id = c.Int(nullable: false, identity: true),
                         Name = c.String(),
-                        CommentPromptText = c.String(),
                     })
                 .PrimaryKey(t => t.Id);
             

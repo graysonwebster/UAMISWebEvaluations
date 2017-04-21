@@ -12,6 +12,8 @@ namespace _360Evaluation3.Models
 
         public string Text { get; set; }
         public bool IsRatingQuestion { get; set; }
+        public bool IsTrueOrFalseQuestion { get; set; }
+        public bool IsActive { get; set; }
 
         // Foreign Keys
         public int QuestionGroupId { get; set; }
